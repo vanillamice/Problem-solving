@@ -1,0 +1,26 @@
+// CF-344A-Magnets
+
+
+#include <iostream>
+#include <string>
+
+int main(int argc, const char * argv[]) {
+    std::string input[100000];
+    int n,sum=0;
+    std::cin>>n;
+    for(int i = 0; i <=n-1; i++){
+        std::cin>>input[i];
+    }
+    for(int x = 1; x <=n; x++){
+        if(input[x] != input[x-1]){
+            //std::cout << "sh" << std::endl;
+            //std::cout << x << std::endl << x-1 << std::endl;
+            sum++;
+        }
+        else{
+            continue;
+        }
+    }
+    std::cout<< sum << std::endl;
+    return 0;
+}
