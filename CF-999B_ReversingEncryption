@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+int main()
+{
+    std::string s;
+    int l; //length of string
+    std::cin >> l >> s;
+    for(int i = 1; i <= l; i++){
+        if(l%i == 0){
+            std::reverse(s.begin(),s.begin()+i);
+        }
+    }
+    std::cout << s << std::endl;
+    return 0;
+}
